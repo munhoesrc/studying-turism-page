@@ -108,46 +108,9 @@ a:hover {
   color: #ffd700;
 }
 
-/* Form styles */
+/* imagens*/
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form div {
-  margin-bottom: 1rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-input, textarea {
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-input:focus, textarea:focus {
-  border-color: #006699;
-  outline: none;
-}
-
-button {
-  background-color: #006699;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-  background-color: #ffd700;
+div img {
+  border-radius: 50%;
+  height: 100px;
 }

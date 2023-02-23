@@ -4,6 +4,12 @@ import Logo from "./img/zyro-image.png";
 import Destino1 from "./img/maldives.jpg";
 import Destino2 from "./img/paris.jpg";
 import Destino3 from "./img/nightchina.jpg";
+import Parque1 from "./img/disney.jpg";
+import Parque2 from "./img/universal.jpg";
+import Parque3 from "./img/Betocarreiro.jpg";
+import cliente1 from "./img/turista1.jpg";
+import cliente2 from "./img/turista2.jpg";
+import cliente3 from "./img/turista3.jpg";
 
 export default function App(): JSX.Element {
   return (
@@ -33,6 +39,7 @@ export default function App(): JSX.Element {
             Pensa em fazer uma pausa na vida diária ? Não se preocupe, nós
             cuidamos de sua viagem.
           </h3>
+          {/* criar card destinos, voos, cruzeiros */}
         </section>
         <section>
           <ul>
@@ -95,23 +102,57 @@ export default function App(): JSX.Element {
           </ul>
         </section>
         <section>
-          <h2>Contato</h2>
-          <form>
-            <div>
-              <label htmlFor="name">Nome:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div>
-              <label htmlFor="email">E-mail:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div>
-              <label htmlFor="message">Mensagem:</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
+          <h1>Categorias populares para você</h1>
+          <li>
+            <h3>Parques</h3>
+            <h3>Praias</h3>
+            <h3>Monumentos</h3>
+          </li>
+          <ul>
+            <li>
+              <img src={Parque1} />
+              <p>Disney Orlando - Florida</p>
+              <button>Ver pacotes</button>
+            </li>
+            <li>
+              <img src={Parque2} />
+              <p>Universal Orlando - Florida</p>
+              <button>Ver pacotes</button>
+            </li>
+            <li>
+              <img src={Parque3} />
+              <p>Beto Carreiro Penha - Santa Catarina</p>
+              <button>Ver pacotes</button>
+            </li>
+          </ul>
         </section>
+        <section>
+          <h3>Veja o que nossos cliente dizem sobre nossos serviços</h3>
+          <div>
+            <img src={cliente1} />
+            <h4>Felipe H.</h4>
+            <p>Viagem ao Caribe incrivel, voltarei!</p>
+          </div>
+          <div>
+            <img src={cliente2} />
+            <h4>Jessica Thais</h4>
+            <p>
+              Amei Roma! Foi uma experiência única, agradeço à agência por
+              tornar isso possível.
+            </p>
+          </div>
+          <div>
+            <img src={cliente3} />
+            <h4>Rafael G.</h4>
+            <p>
+              Minha lua de mel nas Maldivas foi perfeita graças à agência de
+              viagens!
+            </p>
+          </div>
+        </section>
+        <footer>
+          {/* falta criar o footer */}
+        </footer>
       </main>
     </div>
   );
