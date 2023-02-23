@@ -172,18 +172,18 @@ export default function App(): JSX.Element {
           </div>
         </section>
         <footer>
-          <div>
+          <div className="forma-pag">
             <h3>Formas de pagamento</h3>
-            <img src={Master} />
-            <img src={Visa} />
-            <img src={Elo} />
-            <img src={Hiper} />
+            <img className="master" src={Master} />
+            <img className="visa" src={Visa} />
+            <img className="elo" src={Elo} />
+            <img className="hiper" src={Hiper} />
           </div>
-          <div>
+          <div className="app">
             <h3>Baixe nosso aplicativo</h3>
             <img src={AppStore} />
           </div>
-          <div>
+          <div className="televendas">
             <h3>Televendas</h3>
             <p>(11)3003-9282</p>
             <p>Segunda a Sábado: 09h às 21h</p>
