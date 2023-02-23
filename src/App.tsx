@@ -150,9 +150,7 @@ export default function App(): JSX.Element {
             </p>
           </div>
         </section>
-        <footer>
-          {/* falta criar o footer */}
-        </footer>
+        <footer>{/* falta criar o footer */}</footer>
       </main>
     </div>
   );
