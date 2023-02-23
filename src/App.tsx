@@ -121,8 +121,8 @@ export default function App(): JSX.Element {
           </ul>
         </section>
         <section>
-          <h1>Categorias populares para você</h1>
-          <ul>
+          <h1 className="title-populares">Categorias populares para você</h1>
+          <ul className="nav-populares">
             <h3>Parques</h3>
             <h3>Praias</h3>
             <h3>Monumentos</h3>
@@ -130,38 +130,40 @@ export default function App(): JSX.Element {
           <ul>
             <li>
               <p>Disney Orlando - Florida</p>
-              <img src={Parque1} />
+              <img className="img-parq1" src={Parque1} />
               <button>Ver pacotes</button>
             </li>
             <li>
               <p>Universal Orlando - Florida</p>
-              <img src={Parque2} />
+              <img className="img-parq2" src={Parque2} />
               <button>Ver pacotes</button>
             </li>
             <li>
               <p>Beto Carreiro Penha - Santa Catarina</p>
-              <img src={Parque3} />
+              <img className="img-parq3" src={Parque3} />
               <button>Ver pacotes</button>
             </li>
           </ul>
         </section>
         <section>
-          <h3>Veja o que nossos cliente dizem sobre nossos serviços</h3>
-          <div>
-            <img src={cliente1} />
+          <h3 className="title-avaliacao">
+            Veja o que nossos cliente dizem sobre nossos serviços
+          </h3>
+          <div className="client-1">
+            <img className="img-cli-one" src={cliente1} />
             <h4>Felipe H.</h4>
             <p>Viagem ao Caribe incrivel, voltarei!</p>
           </div>
-          <div>
-            <img src={cliente2} />
+          <div className="client-2">
+            <img className="img-cli-two" src={cliente2} />
             <h4>Jessica Thais</h4>
             <p>
               Amei Roma! Foi uma experiência única, agradeço à agência por
               tornar isso possível.
             </p>
           </div>
-          <div>
-            <img src={cliente3} />
+          <div className="client-3">
+            <img className="img-cli-three" src={cliente3} />
             <h4>Rafael G.</h4>
             <p>
               Minha lua de mel nas Maldivas foi perfeita graças à agência de
