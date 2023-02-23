@@ -1,6 +1,6 @@
 import "./App.css";
 import Hero from "./img/pexels-pixabay-210243.jpg";
-import Logo from "./img/zyro-image.png";
+import Logo from "./img/travellogoblue.png";
 import Destino1 from "./img/maldives.jpg";
 import Destino2 from "./img/paris.jpg";
 import Destino3 from "./img/nightchina.jpg";
@@ -10,15 +10,20 @@ import Parque3 from "./img/Betocarreiro.jpg";
 import cliente1 from "./img/turista1.jpg";
 import cliente2 from "./img/turista2.jpg";
 import cliente3 from "./img/turista3.jpg";
+import Master from "./img/logo-mastercard.png";
+import Visa from "./img/bandeira-visa.png";
+import Elo from "./img/bandeira-elo.png";
+import Hiper from "./img/bandeira-hipercard.png";
+import AppStore from "./img/AppStore.png";
 
 export default function App(): JSX.Element {
   return (
     <div>
-      <img src={Hero} />
+      <img className="img-hero" src={Hero} />
       <header>
         <img src={Logo} />
         <nav>
-          <ul>
+          <ul className="nav-header">
             <li>
               <a href="#">Home</a>
             </li>
@@ -30,30 +35,44 @@ export default function App(): JSX.Element {
             </li>
           </ul>
         </nav>
-        <button>Registre-se</button>
+        <button className="btn-header">Registre-se</button>
       </header>
       <main>
-        <section>
+        <section className="section-hero">
           <h1>Descubra e aproveite de novos lugares e experiências</h1>
-          <h3>
+          <h3 className="text-hero">
             Pensa em fazer uma pausa na vida diária ? Não se preocupe, nós
             cuidamos de sua viagem.
           </h3>
-          {/* criar card destinos, voos, cruzeiros */}
+          <section>
+            <div>
+              <ul>Destinos</ul>
+              <ul>Voos</ul>
+              <ul>Cruzeiros</ul>
+            </div>
+            <div>
+              <ul>LOCALIZAÇÃO</ul>
+              <span>Alemanha</span>
+              <ul>PASSAGEIROS</ul>
+              <span>02 Adultos</span>
+              <ul>CHECK-IN</ul>
+              <span>01 Dez 2023</span>
+              <ul>CHECK-OUT</ul>
+              <span>05 Dez 2023</span>
+            </div>
+            <button>Buscar</button>
+          </section>
         </section>
         <section>
           <ul>
             <li>
-              <img src={Destino1} alt="Destino 1" />
-              <a href="#">Saiba mais</a>
+              <img className="destino1" src={Destino1} alt="Destino 1" />
             </li>
             <li>
-              <img src={Destino2} alt="Destino 2" />
-              <a href="#">Saiba mais</a>
+              <img className="destino2" src={Destino2} alt="Destino 2" />
             </li>
             <li>
-              <img src={Destino3} alt="Destino 3" />
-              <a href="#">Saiba mais</a>
+              <img className="destino3" src={Destino3} alt="Destino 3" />
             </li>
           </ul>
         </section>
@@ -66,7 +85,7 @@ export default function App(): JSX.Element {
           </h3>
           <ul>
             <li>
-              <img src="https://via.placeholder.com/200x200" alt="mapa" />
+              <img src="https://via.placeholder.com/80x80" alt="mapa" />
               <h3>Muitas escolhas</h3>
               <p>
                 Há muitas opções de lugares interessantes para fazer uma
@@ -74,7 +93,7 @@ export default function App(): JSX.Element {
               </p>
             </li>
             <li>
-              <img src="https://via.placeholder.com/200x200" alt="carteira" />
+              <img src="https://via.placeholder.com/80x80" alt="carteira" />
               <h3>Reserva fácil</h3>
               <p>
                 Faremos seu pedido o mais rápido possível e nada pode superá-lo.
@@ -82,7 +101,7 @@ export default function App(): JSX.Element {
             </li>
             <li>
               <img
-                src="https://via.placeholder.com/200x200"
+                src="https://via.placeholder.com/80x80"
                 alt="local ususario"
               />
               <h3>Melhor guia turístico</h3>
@@ -103,25 +122,25 @@ export default function App(): JSX.Element {
         </section>
         <section>
           <h1>Categorias populares para você</h1>
-          <li>
+          <ul>
             <h3>Parques</h3>
             <h3>Praias</h3>
             <h3>Monumentos</h3>
-          </li>
+          </ul>
           <ul>
             <li>
-              <img src={Parque1} />
               <p>Disney Orlando - Florida</p>
+              <img src={Parque1} />
               <button>Ver pacotes</button>
             </li>
             <li>
-              <img src={Parque2} />
               <p>Universal Orlando - Florida</p>
+              <img src={Parque2} />
               <button>Ver pacotes</button>
             </li>
             <li>
-              <img src={Parque3} />
               <p>Beto Carreiro Penha - Santa Catarina</p>
+              <img src={Parque3} />
               <button>Ver pacotes</button>
             </li>
           </ul>
@@ -150,7 +169,30 @@ export default function App(): JSX.Element {
             </p>
           </div>
         </section>
-        <footer>{/* falta criar o footer */}</footer>
+        <footer>
+          <div>
+            <h3>Formas de pagamento</h3>
+            <img src={Master} />
+            <img src={Visa} />
+            <img src={Elo} />
+            <img src={Hiper} />
+          </div>
+          <div>
+            <h3>Baixe nosso aplicativo</h3>
+            <img src={AppStore} />
+          </div>
+          <div>
+            <h3>Televendas</h3>
+            <p>(11)3003-9282</p>
+            <p>Segunda a Sábado: 09h às 21h</p>
+            <p>Domingo: 10h às 16h</p>
+            <p>Feriados Nacionais: 09h às 18h</p>
+          </div>
+          <div>
+            <h3>Siga ofertas nas redes</h3>
+            {/* icones redes sociais */}
+          </div>
+        </footer>
       </main>
     </div>
   );
